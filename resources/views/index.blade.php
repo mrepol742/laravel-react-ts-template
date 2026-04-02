@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laravel React</title>
+    <title>Laravel React TS</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -16,6 +16,6 @@
 
 <body>
     <div id="root"></div>
-    @vite ('resources/react/index.jsx')
+    @vite ('resources/react/index.tsx')
 </body>
 </html>

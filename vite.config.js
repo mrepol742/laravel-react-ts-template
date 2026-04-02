@@ -14,7 +14,7 @@ export default defineConfig({
         sourcemap: false,
         rollupOptions: {
             input: {
-                app: path.resolve(__dirname, 'resources/react/index.jsx'),
+                app: path.resolve(__dirname, 'resources/react/index.tsx'),
             },
             onwarn(warning, warn) {
                 if (warning.plugin === 'vite:esbuild') {
@@ -48,15 +48,15 @@ export default defineConfig({
         },
     },
     esbuild: {
-        loader: 'jsx',
-        include: /resources\/.*\.jsx?$/,
+        loader: 'tsx',
+        include: /resources\/.*\.tsx?$/,
         exclude: [],
     },
     optimizeDeps: {
         force: true,
         rolldownOptions: {
             moduleTypes: {
-                '*.jsx': 'js',
+                '*.tsx': 'ts',
             },
         },
     },

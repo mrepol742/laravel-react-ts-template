@@ -1,5 +1,5 @@
-# laravel-react-template
-I did it so you don't have to
+# laravel-react-ts-template
+I did it so you don't have to (with typescript)
 
 ## Setting up
 - install dependecies
